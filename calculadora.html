@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<HTML>
+<HEAD>
+ 
+<TITLE>Calculadora</TITLE>
+    <meta charset="UTF-8">
+    <link href="style\style.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript" src="js\calculadora.js"></script>
+    <script type="text/javascript" src="js\control.js"></script>
+
+</HEAD>
+ 
+ <body>
+ 
+<table class="tg">
+  <tr>
+    <th class="calc-header" colspan=4><input type="text" disabled="true" id="display" class="display"/></th>
+  </tr>
+  <tr>
+    <td class="tg-1"><input type="submit" id="btnCE" class="btn" onclick="clearDisplay()" value ="CE"/></td>
+    <td class="tg-1"><button class="btn">+-</button></td>
+    <td class="tg-1"><button class="btn">M+</button></td>
+    <td class="tg-1"><button class="btn">MR</button></td>
+  </tr>
+  <tr>
+    <td class="tg-2"><input type="submit" id="btn1" class="btn" onclick="addValue(value)" value ="1"/></td>
+    <td class="tg-2"><input type="submit" id="btn2" class="btn" onclick="addValue(value)" value ="2"/></td>
+    <td class="tg-2"><input type="submit" id="btn3" class="btn" onclick="addValue(value)" value ="3"/></td>
+    <td class="tg-1"><input type="submit" id="btn+" class="btn" onclick="operacion('+')" value ="+"/></td>
+  </tr>
+  <tr>
+    <td class="tg-2"><input type="submit" id="btn4" class="btn" onclick="addValue(value)" value ="4"/></td>
+    <td class="tg-2"><input type="submit" id="btn5" class="btn" onclick="addValue(value)" value ="5"/></td>
+    <td class="tg-2"><input type="submit" id="btn6" class="btn" onclick="addValue(value)" value ="6"/></td>
+    <td class="tg-1"><input type="submit" id="btn-" class="btn" onclick="operacion('-')" value ="-"/></td>
+  </tr>
+  <tr>
+    <td class="tg-2"><input type="submit" id="btn7" class="btn" onclick="addValue(value)" value ="7"/></td>
+    <td class="tg-2"><input type="submit" id="btn8" class="btn" onclick="addValue(value)" value ="8"/></td>
+    <td class="tg-2"><input type="submit" id="btn9" class="btn" onclick="addValue(value)" value ="9"/></td>
+    <td class="tg-1"><input type="submit" id="btn*" class="btn" onclick="operacion('*')" value ="*"/></td>
+  </tr>
+  <tr>
+    <td class="tg-2"><input type="submit" id="btn." class="btn" onclick="addValue(value)" value ="."/></td>
+    <td class="tg-2"><input type="submit" id="btn0" class="btn" onclick="addValue(value)" value ="0"/></td>
+    <td class="tg-2"><input type="submit" id="btn=" class="btn" onclick="operacion('=')" value ="="/></td>
+    <td class="tg-1"><input type="submit" id="btn/" class="btn" onclick="operacion('/')" value ="/"/></td>
+  </tr>
+</table>
+</body>
+</html>
